@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--    form view-->
+        <record id="student_view_form" model="ir.ui.view">
+            <field name="name">school.student.form</field>
+            <field name="model">school.student</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="age"/>
+                                <field name="roll_no"/>
+                            </group>
+                            <group>
+                                <field name="gender"/>
+                                <field name="note"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!--    tree vies-->
+        <record id="student_view_tree" model="ir.ui.view">
+            <field name="name">school.student.form</field>
+            <field name="model">school.student</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="age"/>
+                    <field name="roll_no"/>
+                    <field name="gender"/>
+                    <field name="note"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- .........................   action of student      ..................................... -->
+        <record id="action_student" model="ir.actions.act_window">
+            <field name="name">Student</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">school.student</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new student!
+                </p>
+            </field>
+        </record>
+        <menuitem
+                id="menu_school_root_id"
+                name="School Management"
+                sequence="12"/>
+
+        <menuitem
+                id="school_menu_student_detail_id"
+                name="School Detail"
+                parent="menu_school_root_id"
+                sequence="13"/>
+
+        <menuitem
+                id="menu_school_student_root_id"
+                name="Student"
+                parent="school_menu_student_detail_id"
+                action="action_student"
+                sequence="14"/>
+<!--         <menuitem-->
+<!--            id="school_root_menu_id"-->
+<!--            name="School Management"-->
+<!--            sequence="10"/>-->
+
+<!--    <menuitem-->
+<!--            id="student_root"-->
+<!--            name="School Detail"-->
+<!--            parent="school_root_menu_id"-->
+<!--            sequence="11"/>-->
+<!--    <menuitem-->
+<!--            id="student_root_menu_id"-->
+<!--            name="Student"-->
+<!--            parent="student_root"-->
+<!--            action="action_student"-->
+<!--            sequence="12"/>-->
+
+    </data>
+</odoo>
