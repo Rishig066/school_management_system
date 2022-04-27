@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--    form view-->
+        <record id="teacher_view_form" model="ir.ui.view">
+            <field name="name">school.teacher.form</field>
+            <field name="model">school.teacher</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="age"/>
+                                <field name="contact"/>
+                            </group>
+                            <group>
+                                <field name="specialists"/>
+                                <field name="gender"/>
+                                <field name="address"/>
+                                <field name="note"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!--    tree vies-->
+        <record id="teacher_view_tree" model="ir.ui.view">
+            <field name="name">school.teacher.form</field>
+            <field name="model">school.teacher</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="age"/>
+                    <field name="specialists"/>
+                    <field name="contact"/>
+                    <field name="gender"/>
+                    <field name="address"/>
+                    <field name="note"/>
+                </tree>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

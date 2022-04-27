@@ -12,6 +12,7 @@
     'depends': [],
     'data': [
         'views/student.xml',
+        'views/teacher.xml',
         'security/ir.model.access.csv',
     ],
     'demo': [],
