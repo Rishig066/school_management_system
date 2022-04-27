@@ -10,6 +10,8 @@ class SchoolManagement(models.Model):
     name = fields.Char(string='Name', required=True)
     age = fields.Integer(string='Age', required=True)
     roll_no = fields.Char(string='Roll No', required=True)
+    teacher_id = fields.One2many('school.teacher', 'name', string='Teacher')
+
 
     gender = fields.Selection([
         ('male', 'Male'),

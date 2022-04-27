@@ -13,6 +13,7 @@
                                 <field name="name"/>
                                 <field name="age"/>
                                 <field name="roll_no"/>
+                                <field name="teacher_id"/>
                             </group>
                             <group>
                                 <field name="gender"/>
@@ -34,6 +35,7 @@
                     <field name="roll_no"/>
                     <field name="gender"/>
                     <field name="note"/>
+                    <field name="teacher_id"/>
                 </tree>
             </field>
         </record>

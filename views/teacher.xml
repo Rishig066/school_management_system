@@ -19,6 +19,7 @@
                                 <field name="gender"/>
                                 <field name="address"/>
                                 <field name="note"/>
+                                <field name="student_id"/>
                             </group>
                         </group>
                     </sheet>
@@ -38,6 +39,7 @@
                     <field name="gender"/>
                     <field name="address"/>
                     <field name="note"/>
+                    <field name="student_id"/>
                 </tree>
             </field>
         </record>
