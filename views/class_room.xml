@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--    form view-->
+        <record id="class_room_form_view" model="ir.ui.view">
+            <field name="name">school.class_room.form</field>
+            <field name="model">school.class_room</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="cc_name"/>
+                                <field name="students_id"/>
+                                <field name="no_of_tables"/>
+                            </group>
+                            <group>
+                                <field name="no_of_fan"/>
+                                <field name="note"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!--    tree vies-->
+        <record id="class_room_tree_view" model="ir.ui.view">
+            <field name="name">school.class_room.form</field>
+            <field name="model">school.class_room</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="cc_name"/>
+                    <field name="students_id"/>
+                    <field name="no_of_tables"/>
+                    <field name="no_of_fan"/>
+                    <field name="note"/>
+                </tree>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+        <!-- .........................   action of student      ..................................... -->
+        <record id="action_student" model="ir.actions.act_window">
+            <field name="name">Student</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">school.student</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new student!
+                </p>
+            </field>
+        </record>
+         <!-- .........................   action of teacher      ..................................... -->
+        <record id="action_teacher" model="ir.actions.act_window">
+            <field name="name">Teacher</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">school.teacher</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new teacher!
+                </p>
+            </field>
+        </record>
+        <!-- .........................   action of class_room ..................................... -->
+        <record id="action_class_room" model="ir.actions.act_window">
+            <field name="name">Class room</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">school.class_room</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new classRoom!
+                </p>
+            </field>
+        </record>
+
+
+        <menuitem
+                id="menu_school_root_id"
+                name="School Management"
+                sequence="12"/>
+
+        <menuitem
+                id="school_menu_student_detail_id"
+                name="School Detail"
+                parent="menu_school_root_id"
+                sequence="13"/>
+
+        <menuitem
+                id="menu_school_student_root_id"
+                name="Student"
+                parent="school_menu_student_detail_id"
+                action="action_student"
+                sequence="14"/>
+        <menuitem
+                id="menu_school_teacher_root_id"
+                name="Teacher"
+                parent="school_menu_student_detail_id"
+                action="action_teacher"
+                sequence="15"/>
+
+        <menuitem
+                id="menu_school_class_room_id"
+                name="Class Room"
+                parent="school_menu_student_detail_id"
+                action="action_class_room"
+                sequence="16"/>
+
+
+    </data>
+</odoo>

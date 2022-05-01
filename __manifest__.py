@@ -11,8 +11,10 @@
     'images': [],
     'depends': [],
     'data': [
+        'views/menu_or_action.xml',
         'views/student.xml',
         'views/teacher.xml',
+        'views/class_room.xml',
         'security/ir.model.access.csv',
     ],
     'demo': [],
