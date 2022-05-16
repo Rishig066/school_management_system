@@ -15,7 +15,7 @@
                 </p>
             </field>
         </record>
-         <!-- .........................   action of teacher      ..................................... -->
+        <!-- .........................   action of teacher      ..................................... -->
         <record id="action_teacher" model="ir.actions.act_window">
             <field name="name">Teacher</field>
             <field name="type">ir.actions.act_window</field>
@@ -38,12 +38,25 @@
                     Create a new classRoom!
                 </p>
             </field>
+            <!-- .........................   action of wizard ..................................... -->
+
+        </record>
+        <record id="action_wizard" model="ir.actions.act_window">
+            <field name="name">Wizard</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mail.update.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="help" type="html">
+                 <p class="o_view_nocontent_smiling_face">
+
+                </p>
+            </field>
         </record>
 
 
         <menuitem
                 id="menu_school_root_id"
-                name="School Management"
+                name="School Management-git"
                 sequence="12"/>
 
         <menuitem
@@ -71,6 +84,12 @@
                 parent="school_menu_student_detail_id"
                 action="action_class_room"
                 sequence="16"/>
+        <menuitem
+                id="menu_school_wizard_id"
+                name="UPDATE"
+                parent="menu_school_student_root_id"
+                action="action_wizard"
+                sequence="17"/>
 
 
     </data>

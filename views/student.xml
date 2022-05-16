@@ -14,7 +14,7 @@
                                 <field name="age"/>
                                 <field name="roll_no"/>
                                 <field name="standard"/>
-                                <field name="teacher_id"/>
+
                             </group>
                             <group>
                                 <field name="gender"/>
@@ -38,61 +38,12 @@
                     <field name="roll_no"/>
                     <field name="gender"/>
                     <field name="note"/>
-                    <field name="teacher_id"/>
+
                     <field name="standard"/>
                     <field name="cc_name"/>
                 </tree>
             </field>
         </record>
-
-<!--        &lt;!&ndash; .........................   action of student      ..................................... &ndash;&gt;-->
-<!--        <record id="action_student" model="ir.actions.act_window">-->
-<!--            <field name="name">Student</field>-->
-<!--            <field name="type">ir.actions.act_window</field>-->
-<!--            <field name="res_model">school.student</field>-->
-<!--            <field name="view_mode">tree,form</field>-->
-<!--            <field name="help" type="html">-->
-<!--                <p class="o_view_nocontent_smiling_face">-->
-<!--                    Create a new student!-->
-<!--                </p>-->
-<!--            </field>-->
-<!--        </record>-->
-<!--         &lt;!&ndash; .........................   action of teacher      ..................................... &ndash;&gt;-->
-<!--        <record id="action_teacher" model="ir.actions.act_window">-->
-<!--            <field name="name">Teacher</field>-->
-<!--            <field name="type">ir.actions.act_window</field>-->
-<!--            <field name="res_model">school.teacher</field>-->
-<!--            <field name="view_mode">tree,form</field>-->
-<!--            <field name="help" type="html">-->
-<!--                <p class="o_view_nocontent_smiling_face">-->
-<!--                    Create a new teacher!-->
-<!--                </p>-->
-<!--            </field>-->
-<!--        </record>-->
-<!--        <menuitem-->
-<!--                id="menu_school_root_id"-->
-<!--                name="School Management"-->
-<!--                sequence="12"/>-->
-
-<!--        <menuitem-->
-<!--                id="school_menu_student_detail_id"-->
-<!--                name="School Detail"-->
-<!--                parent="menu_school_root_id"-->
-<!--                sequence="13"/>-->
-
-<!--        <menuitem-->
-<!--                id="menu_school_student_root_id"-->
-<!--                name="Student"-->
-<!--                parent="school_menu_student_detail_id"-->
-<!--                action="action_student"-->
-<!--                sequence="14"/>-->
-<!--        <menuitem-->
-<!--                id="menu_school_teacher_root_id"-->
-<!--                name="Teacher"-->
-<!--                parent="school_menu_student_detail_id"-->
-<!--                action="action_teacher"-->
-<!--                sequence="15"/>-->
-
 
     </data>
 </odoo>

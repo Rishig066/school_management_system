@@ -13,22 +13,9 @@ class SchoolManagementStudent(models.Model):
     age = fields.Integer(string='Age', required=True)
     cc_name = fields.Many2one('school.teacher')
     roll_no = fields.Char(string='Roll No', required=True)
-    teacher_id = fields.One2many('school.teacher', 'name', string='Teacher')
-    standard = fields.Selection([
-        ('tenth', '10th'),
-        ('eleven','11th'),
-        ('twelve','12th'),
-    ], required=True, default='10th')
 
-    gender = fields.Selection([
-        ('male', 'Male'),
-        ('female', 'Female'),
-        ('other', 'Other'),
-    ], required=True, default='male')
+    standard = fields.Selection([('tenth', '10th'), ('eleven', '11th'), ('twelve', '12th')], required=True, default='10th')
+
+    gender = fields.Selection([('male', 'Male'), ('female', 'Female'), ('other', 'Other')], required=True, default='male')
 
     note = fields.Text(string='Description')
-
-
-
-
-

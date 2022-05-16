@@ -13,6 +13,7 @@
                                 <field name="name"/>
                                 <field name="age"/>
                                 <field name="contact"/>
+                                <field name="total"/>
                             </group>
                             <group>
                                 <field name="specialists"/>
@@ -20,7 +21,7 @@
                                 <field name="address"/>
                                 <field name="note"/>
                                 <field name="student_id"/>
-                                <field name="total"/>
+
                             </group>
                         </group>
                     </sheet>
